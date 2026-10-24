@@ -9,9 +9,11 @@ st.caption("Upload a CSV file, explore a column, then fit a straight line to pre
 
 #what is this tool for, and what happens when it is wrong?
 st.info(
-    "This model gives a rough estimate of a target such as monthly revenue from two inputs, "
-    "and when it is wrong a manager may over- or under-plan staff, stock and budget, "
-    "it is important to treat this number as a starting point for planning, and not a set value."
+    "This model gives a rough estimate of a target such as monthly revenue from two inputs. "
+    "A helpful starting view in the chart section could be: Column: Monthly Revenue, Chart Type: Scatter, Compare Against: "
+    "Number of Customers. A helpful view in the Prediction section could be: Input 1: Number of customers, Input 2: Menu Price, "
+    "Target: What you want to predict: Monthly Revenue. If the generated prediction is wrong a manager may over- or under-plan staff, "
+    "stock and budget, it is important to treat this number as a starting point for planning, and not a set value."
 )
 
 uploaded_file = st.file_uploader("Upload a CSV file", type="csv")
